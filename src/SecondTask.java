@@ -33,10 +33,10 @@ public class SecondTask {
         long min = t % 60;
         if (min < 10 || hours < 10) {
             if (min < 10 && hours < 10) {
-                return "0" + t / 60 + ":" + "0" + t % 60;
+                return "0" + hours + ":" + "0" + min;
             } else if (min < 10) {
-                return t / 60 + ":" + "0" + t % 60;
-            } else return "0" + t / 60 + ":" + t % 60;
+                return hours + ":" + "0" + min;
+            } else return "0" + hours + ":" + min;
         }
         return t / 60 + ":" + t % 60;
     }
